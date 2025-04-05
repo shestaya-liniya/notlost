@@ -63,6 +63,11 @@ export default function App() {
         value={shadowInputValue}
         onChange={(e) => setShadowInputValue(e.target.value)}
       />
+      {/* {!isSlidingModalOpen && (
+        <KeepAlive cacheKey="tab-bar">
+          <TabViewContainer />
+        </KeepAlive>
+      )} */}
 
       {/* Unmount tab bar on any slider page appearing to free up ressources, especially for graph sliding page */}
       <DelayedUnmount

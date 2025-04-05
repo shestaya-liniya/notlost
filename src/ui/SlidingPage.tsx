@@ -16,7 +16,6 @@ export default function SlidingPage({
   const { setIsSlidingModalOpen } = useModalStore();
   const handleClose = () => {
     onClose();
-    setIsSlidingModalOpen(false);
     if (backButton.isSupported()) {
       backButton.hide();
     }
